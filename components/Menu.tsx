@@ -1,5 +1,6 @@
 import React from 'react'
 import { Bars3Icon} from '@heroicons/react/24/solid'
+import { MenuProps, MenuListProps } from '@/props'
 
 
 
@@ -16,7 +17,7 @@ const ListItem = ({item}:any) =>
     ></span>
   </li>
 
-const MenuList:any = (menuItems:Array<string>) => (
+const MenuList = ({menuItems}:MenuListProps) => (
   <ul className="flex items-center">
     {
       menuItems.map((item, index) => (
@@ -26,10 +27,6 @@ const MenuList:any = (menuItems:Array<string>) => (
   </ul>
 )
 
-type MenuProps = {
-  onMobileMenuClick: () => void,
-  menuItems: []
-}
 
 const Menu = (props:MenuProps) => {
 
@@ -44,7 +41,7 @@ const Menu = (props:MenuProps) => {
       <div className="block lg:hidden">
         <button 
         aria-label="Button"
-        onClick={props.onMobileMenuClick}
+        onClick={props.menuToggle}
         > 
           <Bars3Icon color="white" width={40} height={40}/>
         </button>

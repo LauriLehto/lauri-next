@@ -21,7 +21,7 @@ const Header = () => {
 
   const [mobileMenu, setMobileMenu] = useState<boolean>(false)
 
-  const onMobileMenuClick = () => {
+  const menuToggle = () => {
     console.log('mobile menu clicked')
     setMobileMenu(!mobileMenu)
   }
@@ -29,7 +29,7 @@ const Header = () => {
   const mobileMenuClass = mobileMenu ? 'block' : 'hidden'
 
   const menuProps = {
-    onMobileMenuClick,
+    menuToggle,
     menuItems
   }
 
@@ -41,7 +41,7 @@ const Header = () => {
         <Menu {...menuProps} />
       </div>
     </div>
-    {mobileMenu && <MobileMenu />}
+    {mobileMenu && <MobileMenu {...menuProps}/>}
     </>
   )
 }
