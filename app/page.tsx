@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import 'boxicons/css/boxicons.min.css'
+import { siteContent } from '@/data'
 
 export default function Home() {
+
+  const {title,connect,description} = siteContent
   
   return (
     <div id="main" className="relative">
@@ -45,7 +48,7 @@ export default function Home() {
         <h1
           className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
         >
-          Hello I'm Christy Smith!
+          {title}
         </h1>
         <div
           className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
@@ -53,7 +56,7 @@ export default function Home() {
           <div
             className="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
           >
-            <p className="font-body text-lg uppercase text-white">Let's connect</p>
+            <p className="font-body text-lg uppercase text-white">{connect}</p>
             <div className="hidden sm:block">
               <i className="bx bx-chevron-right text-3xl text-yellow"></i>
             </div>
@@ -99,12 +102,12 @@ export default function Home() {
       <h2
         className="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
       >
-        Who am I?
+        Kuka olen?
       </h2>
       <h4
         className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
       >
-        I'm Christy Smith, a Web Designer & Photographer
+        {description}
       </h4>
       <p className="pt-6 font-body leading-relaxed text-grey-20">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -206,7 +209,7 @@ export default function Home() {
   <h2
     className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Here's what I'm good at
+    Heres what Im good at
   </h2>
   <h3
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -409,7 +412,7 @@ export default function Home() {
   <h3
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
   >
-    Here's what I have done with the past
+    Heres what I have done with the past
   </h3>
 
   <div
@@ -537,7 +540,7 @@ export default function Home() {
   <h3
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
   >
-    Here's what I did before freelancing
+    Heres what I did before freelancing
   </h3>
 
   <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
@@ -874,7 +877,7 @@ export default function Home() {
   <h2
     className="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
   >
-    Here's a contact form
+    Heres a contact form
   </h2>
   <h4
     className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
@@ -975,7 +978,7 @@ export default function Home() {
       className="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
     >
       Keep <span className="font-bold">up-to-date</span> <br />
-      with what I'm up to
+      with what Im up to
     </h3>
     <form className="mt-6 flex flex-col justify-center sm:flex-row">
       <input
