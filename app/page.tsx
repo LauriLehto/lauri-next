@@ -17,24 +17,20 @@ export default function Home() {
   const {title,connect,description} = siteContent
   
   return (
-    <div id="main" className="relative">
-      <div>
-        <div>
-          <Hero />
-          <About />
-          <Services />
-          <Portfolio />
-          <Work />
-          <Statistics />
-          <Blog />
-          <Contact />
-          {/* <div
-            className="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
-            style={{backgroundImage: "url(/assets/img/map.png)"}}
-          ></div> */}
-          <SignUp />
-        </div>
-      </div>
-    </div>
+    <>
+      <Hero />
+      <About />
+      <Services />
+      <Portfolio />
+      <Work />
+      <Statistics />
+      <Blog />
+      <Contact />
+      {/* <div
+        className="h-72 bg-cover bg-center bg-no-repeat sm:h-64 md:h-72 lg:h-96"
+        style={{backgroundImage: "url(/assets/img/map.png)"}}
+      ></div> */}
+      <SignUp />
+    </>
   )
 }

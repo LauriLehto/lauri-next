@@ -1,8 +1,6 @@
-import React from 'react'
+import Link from 'next/link'
 import { Bars3Icon} from '@heroicons/react/24/solid'
 import { MenuProps, MenuListProps } from '@/props'
-
-
 
 const ListItem = ({item}:any) => 
   <li className="group pl-6">
@@ -10,7 +8,9 @@ const ListItem = ({item}:any) =>
       /* @click="triggerNavItem('#about')" */
       className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
       >
+        <Link href={`/${item.toLowerCase()}`}>
       {item}
+      </Link>
     </span>
     <span
       className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
