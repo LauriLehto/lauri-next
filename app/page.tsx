@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import 'boxicons/css/boxicons.min.css'
 
 export default function Home() {
+  
   return (
     <div id="main" className="relative">
       <div
@@ -17,99 +19,6 @@ export default function Home() {
       >
   
 
-<div
-  className="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
-  /* :className="{ 'opacity-100 pointer-events-auto': mobileMenu }" */
->
-  <div
-    className="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
-  >
-    <button
-      aria-label="Button"
-      className="absolute top-0 right-0 mt-4 mr-4"
-      /* @click="mobileMenu = false" */
-    >
-      <img src="/assets/img/icon-close.svg" className="h-10 w-auto" alt="" />
-    </button>
-
-    <ul className="mt-8 flex flex-col">
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#about')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >About</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#services')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Services</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#portfolio')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Portfolio</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#clients')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Clients</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#work')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Work</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#statistics')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Statistics</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-         /*  @click="triggerMobileNavItem('#blog')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Blog</span>
-        
-      </li>
-      
-      <li className="py-2">
-        
-        <span
-          /* @click="triggerMobileNavItem('#contact')" */
-          className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Contact</span>
-        
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 
       <div><div
   className="relative bg-cover bg-center bg-no-repeat py-8"
@@ -124,7 +33,9 @@ export default function Home() {
   >
     <div className="flex flex-col items-center justify-center lg:flex-row">
       <div className="rounded-full border-8 border-primary shadow-xl">
-        <img
+        <Image
+          height={200}
+          width={200}
           src="/assets/img/blog-author.jpg"
           className="h-48 rounded-full sm:h-56"
           alt="author"
@@ -150,31 +61,31 @@ export default function Home() {
           <div
             className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
           >
-            <a aria-label="Link" href="/">
+            <Link aria-label="Link" href="/">
               <i
                 className="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
               ></i>
-            </a>
-            <a aria-label="Link" href="/" className="pl-4">
+            </Link>
+            <Link aria-label="Link" href="/" className="pl-4">
               <i
                 className="bx bxl-twitter text-2xl text-white hover:text-yellow"
               ></i>
-            </a>
-            <a aria-label="Link" href="/" className="pl-4">
+            </Link>
+            <Link aria-label="Link" href="/" className="pl-4">
               <i
                 className="bx bxl-dribbble text-2xl text-white hover:text-yellow"
               ></i>
-            </a>
-            <a aria-label="Link" href="/" className="pl-4">
+            </Link>
+            <Link aria-label="Link" href="/" className="pl-4">
               <i
                 className="bx bxl-linkedin text-2xl text-white hover:text-yellow"
               ></i>
-            </a>
-            <a aria-label="Link" href="/" className="pl-4">
+            </Link>
+            <Link aria-label="Link" href="/" className="pl-4">
               <i
                 className="bx bxl-instagram text-2xl text-white hover:text-yellow"
               ></i>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -218,31 +129,31 @@ export default function Home() {
         <div
           className="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
         >
-          <a aria-label="Link" href="/">
+          <Link aria-label="Link" href="/">
             <i
               className="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a aria-label="Link" href="/" className="pl-4">
+          </Link>
+          <Link aria-label="Link" href="/" className="pl-4">
             <i
               className="bx bxl-twitter text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a aria-label="Link" href="/" className="pl-4">
+          </Link>
+          <Link aria-label="Link" href="/" className="pl-4">
             <i
               className="bx bxl-dribbble text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a aria-label="Link" href="/" className="pl-4">
+          </Link>
+          <Link aria-label="Link" href="/" className="pl-4">
             <i
               className="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
-          <a aria-label="Link" href="/" className="pl-4">
+          </Link>
+          <Link aria-label="Link" href="/" className="pl-4">
             <i
               className="bx bxl-instagram text-2xl text-primary hover:text-yellow"
             ></i>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -309,13 +220,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-development-white.svg"
             alt="development icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-development-black.svg"
             alt="development icon"
           />
@@ -335,13 +250,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-content-white.svg"
             alt="content marketing icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-content-black.svg"
             alt="content marketing icon"
           />
@@ -361,13 +280,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-mobile-white.svg"
             alt="Mobile Application icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-mobile-black.svg"
             alt="Mobile Application icon"
           />
@@ -387,13 +310,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-email-white.svg"
             alt="Email Marketing icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-email-black.svg"
             alt="Email Marketing icon"
           />
@@ -413,13 +340,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-design-white.svg"
             alt="Theme Design icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-design-black.svg"
             alt="Theme Design icon"
           />
@@ -439,13 +370,17 @@ export default function Home() {
     <div className="group rounded px-8 py-12 shadow hover:bg-primary">
       <div className="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
         <div className="hidden group-hover:block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-graphics-white.svg"
             alt="Graphic Design icon"
           />
         </div>
         <div className="block group-hover:hidden">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/icon-graphics-black.svg"
             alt="Graphic Design icon"
           />
@@ -480,46 +415,54 @@ export default function Home() {
   <div
     className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
   >
-    <a
+    <Link
       href="/"
       className="mx-auto transform transition-all hover:scale-105 md:mx-0"
     >
-      <img
+      <Image
+      height={200}
+      width={200}
         src="/assets/img/portfolio-apple.jpeg"
         className="w-full shadow"
         alt="portfolio image"
       />
-    </a>
-    <a
+    </Link>
+    <Link
       href="/"
       className="mx-auto transform transition-all hover:scale-105 md:mx-0"
     >
-      <img
+      <Image
+      height={200}
+      width={200}
         src="/assets/img/portfolio-stripe.jpeg"
         className="w-full shadow"
         alt="portfolio image"
       />
-    </a>
-    <a
+    </Link>
+    <Link
       href="/"
       className="mx-auto transform transition-all hover:scale-105 md:mx-0"
     >
-      <img
+      <Image
+      height={200}
+      width={200}
         src="/assets/img/portfolio-fedex.jpeg"
         className="w-full shadow"
         alt="portfolio image"
       />
-    </a>
-    <a
+    </Link>
+    <Link
       href="/"
       className="mx-auto transform transition-all hover:scale-105 md:mx-0"
     >
-      <img
+      <Image
+      height={200}
+      width={200}
         src="/assets/img/portfolio-microsoft.jpeg"
         className="w-full shadow"
         alt="portfolio image"
       />
-    </a>
+    </Link>
   </div>
 </div>
 
@@ -533,14 +476,18 @@ export default function Home() {
       </h2>
       <div className="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
         <span className="m-8 block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/logo-coca-cola.svg"
             alt="client logo"
             className="mx-auto block h-12 w-auto"
           />
         </span>
         <span className="m-8 block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/logo-apple.svg"
             alt="client logo"
             className="mx-auto block h-12 w-auto"
@@ -548,7 +495,9 @@ export default function Home() {
         </span>
 
         <span className="m-8 block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/logo-netflix.svg"
             alt="client logo"
             className="mx-auto block h-12 w-auto"
@@ -556,7 +505,9 @@ export default function Home() {
         </span>
 
         <span className="m-8 block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/logo-amazon.svg"
             alt="client logo"
             className="mx-auto block h-12 w-auto"
@@ -564,7 +515,9 @@ export default function Home() {
         </span>
 
         <span className="m-8 block">
-          <img
+          <Image
+          height={200}
+          width={200}
             src="/assets/img/logo-stripe.svg"
             alt="client logo"
             className="mx-auto block h-12 w-auto"
@@ -596,7 +549,9 @@ export default function Home() {
       <div className="md:w-2/5">
         <div className="flex justify-center md:justify-start">
           <span className="shrink-0">
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/logo-spotify.svg"
               className="h-auto w-32"
               alt="company logo"
@@ -619,18 +574,15 @@ export default function Home() {
             <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
             <div className="md:-mt-1 md:pl-8">
               <span className="block font-body font-bold text-grey-40"
-                >Apr 2015 - Mar 2018</span
-              >
+                >Apr 2015 - Mar 2018</span>
               <span
                 className="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Frontend Developer</span
-              >
+                >Frontend Developer</span>
               <div className="pt-2">
                 <span className="block font-body text-black"
                   >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
+                  venenatis enim.</span>
               </div>
             </div>
           </div>
@@ -641,7 +593,9 @@ export default function Home() {
       <div className="md:w-2/5">
         <div className="flex justify-center md:justify-start">
           <span className="shrink-0">
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/logo-microsoft.svg"
               className="h-auto w-32"
               alt="company logo"
@@ -664,18 +618,15 @@ export default function Home() {
             <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
             <div className="md:-mt-1 md:pl-8">
               <span className="block font-body font-bold text-grey-40"
-                >Mar 2018 - September 2019</span
-              >
+                >Mar 2018 - September 2019</span>
               <span
                 className="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Software Engineer</span
-              >
+                >Software Engineer</span>
               <div className="pt-2">
                 <span className="block font-body text-black"
                   >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
+                  venenatis enim.</span>
               </div>
             </div>
           </div>
@@ -686,7 +637,9 @@ export default function Home() {
       <div className="md:w-2/5">
         <div className="flex justify-center md:justify-start">
           <span className="shrink-0">
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/logo-fedex.svg"
               className="h-auto w-32"
               alt="company logo"
@@ -709,8 +662,7 @@ export default function Home() {
             <i className="bx bxs-right-arrow hidden text-primary md:block"></i>
             <div className="md:-mt-1 md:pl-8">
               <span className="block font-body font-bold text-grey-40"
-                >October 2019 - Feb 2021</span
-              >
+                >October 2019 - Feb 2021</span>
               <span
                 className="block pt-2 font-header text-xl font-bold uppercase text-primary"
                 >DevOps Engineer</span>
@@ -742,7 +694,9 @@ export default function Home() {
           className="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
         >
           <div>
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/icon-project.svg"
               className="mx-auto h-12 w-auto md:h-20"
               alt="icon project"
@@ -764,7 +718,9 @@ export default function Home() {
           className="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
         >
           <div>
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/icon-award.svg"
               className="mx-auto h-12 w-auto md:h-20"
               alt="icon award"
@@ -786,7 +742,9 @@ export default function Home() {
           className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
         >
           <div>
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/icon-happy.svg"
               className="mx-auto h-12 w-auto md:h-20"
               alt="icon happy clients"
@@ -808,7 +766,9 @@ export default function Home() {
           className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
         >
           <div>
-            <img
+            <Image
+            height={200}
+            width={200}
               src="/assets/img/icon-puzzle.svg"
               className="mx-auto h-12 w-auto md:h-20"
               alt="icon puzzle"
@@ -845,7 +805,7 @@ export default function Home() {
     <div
       className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
     >
-      <a href="/post" className="shadow">
+      <Link href="/post" className="shadow">
         <div
           style={{backgroundImage: "url(/assets/img/post-01.png)"}}
           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -864,8 +824,8 @@ export default function Home() {
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </div>
-      </a>
-      <a href="/post" className="shadow">
+      </Link>
+      <Link href="/post" className="shadow">
         <div
           style={{backgroundImage: "url(/assets/img/post-02.png)"}}
           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -885,8 +845,8 @@ export default function Home() {
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </div>
-      </a>
-      <a href="/post" className="shadow">
+      </Link>
+      <Link href="/post" className="shadow">
         <div
           style={{backgroundImage: "url(/assets/img/post-03.png)"}}
           className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
@@ -905,7 +865,7 @@ export default function Home() {
             >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
         </div>
-      </a>
+      </Link>
     </div>
   </div>
 </div>
