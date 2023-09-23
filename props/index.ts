@@ -7,3 +7,8 @@ export interface MenuProps {
 export type MenuListProps = {
   menuItems: [] | Array<string>;
 };
+
+export type SiteProps = {
+  title: string;
+  description: string;
+};

@@ -1,11 +1,11 @@
 export const siteContent = {
   title: "Lauri Lehto",
   connect: "Ota yhteyttä",
-  description: "Web Developer",
+  description: "Olen muusikko ja ohjelmoija Hyvinkäältä.",
   about: {
-    title: "About",
+    title: "Tietoa minusta",
     description:
-      "I'm a web developer based in Helsinki, Finland. I have passion for creating modern and responsive websites and applications.",
+      "Opiskelin muusikoksi Lahdessa ja olen valmistunut musiikkipedagogiksi. Olen ammatiltani orkesterimuusikko ja olen soittanut Mikkelin kaupunginorkesterin I-viulunäänenjohtajana vuodesta 2008. /n Vuonna 2016 aloitin ohjelmoinnin opiskelun ja olen suorittanut ohjelmoinnin perusopinnot Jyväskylän avoimessa yliopistossa. Olen opiskellut myös Reactia ja Node.js:ää. Olen tehnyt Reactilla ja Node.js:llä muutamia projekteja, joista osa on nähtävillä portfoliossani.",
   },
   services: {
     title: "Services",
