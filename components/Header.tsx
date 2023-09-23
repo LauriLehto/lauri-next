@@ -5,9 +5,7 @@ import {useState} from 'react'
 import Menu from './Menu'
 import MobileMenu from './MobileMenu';
 
-const menuItems = [
-  "About", "Services", "Portfolio", "Clients", "Work", "Statistics", "Blog", "Contact"
-]
+import { menuItems } from '@/data'
 
 const Logo = () => (
   <div>
@@ -19,18 +17,19 @@ const Logo = () => (
 
 const Header = () => {
 
-  const [mobileMenu, setMobileMenu] = useState<boolean>(false)
+  const [menuOpen, openMenu] = useState<boolean>(false)
 
   const menuToggle = () => {
     console.log('mobile menu clicked')
-    setMobileMenu(!mobileMenu)
+    openMenu(!menuOpen)
   }
 
-  const mobileMenuClass = mobileMenu ? 'block' : 'hidden'
+  const mobileMenuClass = menuOpen ? 'block' : 'hidden'
 
   const menuProps = {
     menuToggle,
-    menuItems
+    menuItems,
+    menuOpen
   }
 
   return (
@@ -41,7 +40,7 @@ const Header = () => {
         <Menu {...menuProps} />
       </div>
     </div>
-    {mobileMenu && <MobileMenu {...menuProps}/>}
+    {menuOpen && <MobileMenu {...menuProps}/>}
     </>
   )
 }
